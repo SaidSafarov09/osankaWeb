@@ -10,6 +10,8 @@ import { GoTop } from "./components/goTop/GoTop";
 import { Footer } from "./layout/footer/Footer";
 import { DesktopHeader } from "./layout/header/desktopHeader/DesktopHeader";
 import { MobileHeader } from "./layout/header/mobileHeader/MobileHeader";
+import { ReviewPage } from "./Pages/reviewsPage/ReviewsPage";
+import { RecomendationPage } from "./Pages/recomendationPage/RecomendationPage";
 
 export const App: React.FC = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -34,6 +36,11 @@ export const App: React.FC = () => {
         <Route path="/Delote-Beauty/price" element={<PricePage />} />
         <Route path="/Delote-Beauty/contacts" element={<ContactsPage />} />
         <Route path="/Delote-Beauty/error" element={<ErrorPage />} />
+        <Route path="/Delote-Beauty/reviews" element={<ReviewPage />} />
+        <Route
+          path="/Delote-Beauty/recomendation"
+          element={<RecomendationPage />}
+        />
       </Routes>
       <Footer />
       <GoTop />

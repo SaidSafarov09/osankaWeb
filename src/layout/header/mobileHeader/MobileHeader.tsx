@@ -17,8 +17,13 @@ const NavDate: INavItem[] = [
   { id: "LeftNav1", link: "/Delote-Beauty/home", text: "Главная" },
   { id: "LeftNav2", link: "/Delote-Beauty/team", text: "Массажисты" },
   { id: "RightNav1", link: "/Delote-Beauty/price", text: "Цены" },
-  { id: "RightNav2", link: "/Delote-Beauty/error", text: "Отзывы" },
+  { id: "RightNav2", link: "/Delote-Beauty/reviews", text: "Отзывы" },
   { id: "RightNav3", link: "/Delote-Beauty/contacts", text: "Контакты" },
+  {
+    id: "RightNav3",
+    link: "/Delote-Beauty/recomendation",
+    text: "Рекомендации",
+  },
 ];
 
 export const MobileHeader: React.FC = () => {

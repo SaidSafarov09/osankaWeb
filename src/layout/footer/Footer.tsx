@@ -51,7 +51,7 @@ export function Footer() {
           </Slide>
         </FlexWrapper>
         <Fade>
-          <S.Copyright>Copyright © 2017 - {currentYear}</S.Copyright>
+          <S.Copyright>OsAnka 2017 - {currentYear}</S.Copyright>
         </Fade>
       </Container>
     </S.Footer>

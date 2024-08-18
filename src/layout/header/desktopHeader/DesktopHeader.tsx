@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container } from "../../../components/Container";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import { Burger } from "../../../components/burger/Burger";
+// import { Burger } from "../../../components/burger/Burger";
 import { Icon } from "../../../components/icon/Icon";
 import { Logo } from "../../../components/logo/Logo";
 import { Menu } from "../../../components/menu/Menu";
@@ -17,11 +17,16 @@ export interface INavItem {
 const LeftNav: INavItem[] = [
   { id: "LeftNav1", link: "/Delote-Beauty/home", text: "Главная" },
   { id: "LeftNav2", link: "/Delote-Beauty/team", text: "Массажисты" },
+  { id: "RightNav1", link: "/Delote-Beauty/price", text: "Цены" },
 ];
 const RightNav: INavItem[] = [
-  { id: "RightNav1", link: "/Delote-Beauty/price", text: "Цены" },
-  { id: "RightNav2", link: "/Delote-Beauty/error", text: "Отзывы" },
+  { id: "RightNav2", link: "/Delote-Beauty/reviews", text: "Отзывы" },
   { id: "RightNav3", link: "/Delote-Beauty/contacts", text: "Контакты" },
+  {
+    id: "RightNav3",
+    link: "/Delote-Beauty/recomendation",
+    text: "Рекомендации",
+  },
 ];
 
 export const DesktopHeader: React.FC = () => {
@@ -44,7 +49,7 @@ export const DesktopHeader: React.FC = () => {
           <Menu navItems={LeftNav} />
           <Logo />
           <Menu navItems={RightNav} />
-          <Burger isOpen={isOpen} setIsOpen={setIsOpen} />
+          {/* <Burger isOpen={isOpen} setIsOpen={setIsOpen} /> */}
         </FlexWrapper>
       </Container>
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />

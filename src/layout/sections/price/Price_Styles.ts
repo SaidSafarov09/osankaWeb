@@ -24,18 +24,16 @@ const PriceWrapper = styled.div`
 
 const Image = styled.img`
 	width: 100%;
-	aspect-ratio: 636/536;
 `
 const List = styled.ul<PriceListType>`
 	width: 100%;
-	max-width: 526px;
 	margin-left: ${props => props.mode || '0px'};
 `
 
 const Item = styled.li`
 	padding-bottom: 20px;
 	padding-top: 40px;
-	border-bottom: 1px solid ${theme.colors.font};
+	
 `
 const Title = styled.h5`
 	font-family: 'Cormorant Garamond';

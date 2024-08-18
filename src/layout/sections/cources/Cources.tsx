@@ -6,12 +6,11 @@ import { SectionTitle } from "../../../components/SectionTitle";
 import { Container } from "../../../components/Container";
 import { S } from "./Services_Styles";
 import { ServicesItem } from "./servicesItem/ServicesItem";
-import styled from "styled-components";
 
-const LI = styled.li`
-  list-style: disc;
-  margin-left: 20px;
-`;
+// const LI = styled.li`
+//   list-style: disc;
+//   margin-left: 20px;
+// `;
 
 const data = [
   {

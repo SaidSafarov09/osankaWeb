@@ -1,10 +1,17 @@
 import { NavLink } from "react-router-dom";
-import { Icon } from "../icon/Icon";
+import MainLogo from "../../assets/images/mainLogo.png";
+import styled from "styled-components";
+
+const LogoMain = styled.img`
+  width: 80px;
+  heignt: 80px;
+  text-align: center;
+`;
 
 export const Logo: React.FC = () => {
   return (
     <NavLink to="/Delote-Beauty/home">
-      <Icon idIcon="logoIcon" width="40" height="40" viewBox="0 0 40 40" />
+      <LogoMain src={MainLogo} />
     </NavLink>
   );
 };
