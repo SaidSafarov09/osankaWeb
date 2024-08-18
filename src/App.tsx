@@ -27,8 +27,8 @@ export const App: React.FC = () => {
     <div className="App">
       {width < breakpoint ? <MobileHeader /> : <DesktopHeader />}
       <Routes>
-        <Route path="/" element={<Navigate to={"/"} />} />
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Navigate to={"/home"} />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/price" element={<PricePage />} />
         <Route path="/contacts" element={<ContactsPage />} />
@@ -36,7 +36,6 @@ export const App: React.FC = () => {
         <Route path="/reviews" element={<ReviewPage />} />
         <Route path="/recomendation" element={<RecomendationPage />} />
       </Routes>
-      <HomePage />
       <Footer />
       <GoTop />
     </div>
