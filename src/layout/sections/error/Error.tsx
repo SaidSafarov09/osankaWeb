@@ -12,7 +12,7 @@ export const Error: React.FC = () => {
         <FlexWrapper direction="column" align="center" justify="center">
           <S.Image src={error} alt="error" />
           <SectionTitle>Страница не найдена</SectionTitle>
-          <NavLink to="/Delote-Beauty/home">
+          <NavLink to="/">
             <S.Link>на главную</S.Link>
           </NavLink>
         </FlexWrapper>

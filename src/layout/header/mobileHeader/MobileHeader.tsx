@@ -14,14 +14,14 @@ export interface INavItem {
 }
 
 const NavDate: INavItem[] = [
-  { id: "LeftNav1", link: "/Delote-Beauty/home", text: "Главная" },
-  { id: "LeftNav2", link: "/Delote-Beauty/team", text: "Массажисты" },
-  { id: "RightNav1", link: "/Delote-Beauty/price", text: "Цены" },
-  { id: "RightNav2", link: "/Delote-Beauty/reviews", text: "Отзывы" },
-  { id: "RightNav3", link: "/Delote-Beauty/contacts", text: "Контакты" },
+  { id: "LeftNav1", link: "/", text: "Главная" },
+  { id: "LeftNav2", link: "/team", text: "Массажисты" },
+  { id: "RightNav1", link: "/price", text: "Цены" },
+  { id: "RightNav2", link: "/reviews", text: "Отзывы" },
+  { id: "RightNav3", link: "/contacts", text: "Контакты" },
   {
     id: "RightNav3",
-    link: "/Delote-Beauty/recomendation",
+    link: "/recomendation",
     text: "Рекомендации",
   },
 ];

@@ -10,7 +10,7 @@ const LogoMain = styled.img`
 
 export const Logo: React.FC = () => {
   return (
-    <NavLink to="/Delote-Beauty/home">
+    <NavLink to="/">
       <LogoMain src={MainLogo} />
     </NavLink>
   );

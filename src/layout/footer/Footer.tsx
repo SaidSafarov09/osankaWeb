@@ -14,7 +14,7 @@ export function Footer() {
       <Container>
         <FlexWrapper justify="space-between" align="flex-start" wrap="wrap">
           <Slide>
-            <NavLink to={"/Delote-Beauty/home"}>
+            <NavLink to={"/"}>
               <Icon
                 idIcon="logoIcon"
                 width="60"
