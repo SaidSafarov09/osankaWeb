@@ -54,7 +54,7 @@ const Text = styled.h3`
 	position: absolute;
 	top: 50%;
 	left: 50px;
-	font-size: 1.4vw;
+	font-size: 1.5vw;
 	font-weight: 400;
 	line-height: 120%;
 	letter-spacing: 0%;
@@ -62,14 +62,14 @@ const Text = styled.h3`
 	font-weight: 700;
 	text-align:center;
 	@media ${theme.media.desktop} {
-		font-size: 1.5vw;
+		font-size: 1.6vw;
 	}
 
 	@media ${theme.media.tablet} {
-		font-size: 2.5vw;
+		font-size: 2.6vw;
 	}
 	@media ${theme.media.mobile} {
-		font-size: 5vw;
+		font-size: 5.2vw;
 	}
 `
 

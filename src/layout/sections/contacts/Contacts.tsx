@@ -29,6 +29,7 @@ export const Contacts: React.FC = () => {
           <Fade>
             <OperatingMode />
           </Fade>
+
           {/* <Fade>
 						<Contact />
 					</Fade>

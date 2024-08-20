@@ -24,6 +24,17 @@ const NavDate: INavItem[] = [
     link: "/recomendation",
     text: "Рекомендации",
   },
+  {
+    id: "RightNav3",
+    link: "https://t.me/+fX8OyupEqC84MTMy",
+    text: "Мы в Telegram",
+  },
+
+  {
+    id: "RightNav3",
+    link: "tel:+79870007191",
+    text: "+7 (987) 000-71-91",
+  },
 ];
 
 export const MobileHeader: React.FC = () => {
