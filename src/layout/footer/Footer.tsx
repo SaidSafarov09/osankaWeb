@@ -6,6 +6,7 @@ import { Contact } from "../../components/contact/Contact";
 import { Icon } from "../../components/icon/Icon";
 import { OperatingMode } from "../../components/operatingMode/OperatingMode";
 import { S } from "./Footer_Styles";
+import { Logo } from "../../components/logo/Logo";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,12 +16,7 @@ export function Footer() {
         <FlexWrapper justify="space-between" align="flex-start" wrap="wrap">
           <Slide>
             <NavLink to={"/"}>
-              <Icon
-                idIcon="logoIcon"
-                width="60"
-                height="60"
-                viewBox="0 0 60 60"
-              />
+              <Logo />
             </NavLink>
           </Slide>
           <Slide>
