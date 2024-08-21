@@ -29,6 +29,11 @@ const NavDate: INavItem[] = [
     link: "https://t.me/+fX8OyupEqC84MTMy",
     text: "Мы в Telegram",
   },
+  {
+    id: "RightNav3",
+    link: "https://wa.me/message/SXWX25TYQBLZC1",
+    text: "Мы в WhatsApp",
+  },
 
   {
     id: "RightNav3",

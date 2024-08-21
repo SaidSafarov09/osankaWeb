@@ -13,6 +13,9 @@ export const OperatingMode: React.FC = () => {
       <S.Title>
         <a href="https://t.me/+fX8OyupEqC84MTMy">Мы в Telegram</a>
       </S.Title>
+      <S.Title>
+        <a href="https://wa.me/message/SXWX25TYQBLZC1">Мы в WhatsApp</a>
+      </S.Title>
     </S.OperatingMode>
   );
 };
