@@ -9,7 +9,7 @@ export const Main: React.FC = () => {
         <S.MainTitle>
           <Typewriter
             options={{
-              strings: ["«Os.Anka»"],
+              strings: ["«Os.anka»"],
               autoStart: true,
               loop: true,
             }}
