@@ -34,6 +34,11 @@ const NavDate: INavItem[] = [
     link: "https://wa.me/message/SXWX25TYQBLZC1",
     text: "Мы в WhatsApp",
   },
+  {
+    id: "RightNav3",
+    link: "https://n835315.yclients.com/",
+    text: "Записаться",
+  },
 
   {
     id: "RightNav3",

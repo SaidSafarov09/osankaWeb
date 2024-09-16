@@ -9,10 +9,18 @@ import { Container } from "../../../components/Container";
 import { S } from "./Services_Styles";
 import { ServicesItem } from "./servicesItem/ServicesItem";
 import styled from "styled-components";
+import { Button } from "../../../components/button/Button";
+import { theme } from "../../../styles/Theme";
 
 const LI = styled.li`
   list-style: disc;
   margin-left: 20px;
+`;
+
+const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const P = styled.p`
@@ -21,6 +29,24 @@ const P = styled.p`
 const DIV = styled.div`
   display: flex;
   width: 100%;
+`;
+const B = styled.div`
+  margin-top: 42px;
+  @media ${theme.media.tablet} {
+    margin-top: 36px;
+  }
+  @media ${theme.media.mobile} {
+    margin-top: 24px;
+  }
+`;
+const BT = styled.div`
+  margin-bottom: 42px;
+  @media ${theme.media.tablet} {
+    margin-bottom: 36px;
+  }
+  @media ${theme.media.mobile} {
+    margin-bottom: 24px;
+  }
 `;
 
 const data = [
@@ -31,7 +57,7 @@ const data = [
       <>
         <DIV>
           <P>
-            Пробный массаж + <br />
+            массаж + <br />
             диагностика - 1400 рублей
             <br />
             <br />
@@ -157,13 +183,21 @@ export const Services: React.FC = () => {
   return (
     <S.Services>
       <Container>
-        <S.ServicesContainer>
-          {data.map((item) => (
-            <Slide key={item.id}>
-              <ServicesItem item={item} />
-            </Slide>
-          ))}
-        </S.ServicesContainer>
+        <Center>
+          <BT>
+            <Button />
+          </BT>
+          <S.ServicesContainer>
+            {data.map((item) => (
+              <Slide key={item.id}>
+                <ServicesItem item={item} />
+              </Slide>
+            ))}
+          </S.ServicesContainer>
+          <B>
+            <Button />
+          </B>
+        </Center>
       </Container>
     </S.Services>
   );

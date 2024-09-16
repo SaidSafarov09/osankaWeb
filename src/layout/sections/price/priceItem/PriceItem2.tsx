@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { theme } from "../../../../styles/Theme";
 import { S } from "../Price_Styles";
 import { SectionTitle } from "../../../../components/SectionTitle";
+import { Button } from "../../../../components/button/Button";
 
 const FlexWrapperDiv = styled.div`
   display: flex;
@@ -54,6 +55,16 @@ const DescriptionList = styled.ul`
   li {
     list-style: disc;
     padding: 5px 0;
+  }
+`;
+
+const B = styled.div`
+  margin-top: 26px;
+  @media ${theme.media.tablet} {
+    margin-top: 20px;
+  }
+  @media ${theme.media.mobile} {
+    margin-top: 16px;
   }
 `;
 
@@ -112,6 +123,9 @@ export const PriceItem2: React.FC = () => {
           </tbody>
         </Table>
       </FlexWrapperDiv>
+      <B>
+        <Button />
+      </B>
       {/* <S.Text>+ обработка кончинков волос</S.Text> */}
     </S.Item>
   );

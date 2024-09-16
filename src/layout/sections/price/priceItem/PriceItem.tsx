@@ -2,6 +2,7 @@ import styled from "styled-components";
 // import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { theme } from "../../../../styles/Theme";
 import { S } from "../Price_Styles";
+import { Button } from "../../../../components/button/Button";
 
 const FlexWrapperDiv = styled.div`
   display: flex;
@@ -70,6 +71,16 @@ const Coast = styled.span`
   }
   @media ${theme.media.mobile} {
     font-size: 16px;
+  }
+`;
+
+const B = styled.div`
+  margin-top: 26px;
+  @media ${theme.media.tablet} {
+    margin-top: 20px;
+  }
+  @media ${theme.media.mobile} {
+    margin-top: 16px;
   }
 `;
 
@@ -188,6 +199,9 @@ export const PriceItem: React.FC = () => {
           </tbody>
         </Table2>
       </FlexWrapperDiv>
+      <B>
+        <Button />
+      </B>
       {/* <S.Text>+ обработка кончинков волос</S.Text> */}
     </S.Item>
   );
