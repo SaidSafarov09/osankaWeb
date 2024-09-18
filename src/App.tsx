@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { ContactsPage } from "./Pages/contactsPage/ContactsPage";
 import { ErrorPage } from "./Pages/errorPage/ErrorPage";
@@ -27,8 +27,7 @@ export const App: React.FC = () => {
     <div className="App">
       {width < breakpoint ? <MobileHeader /> : <DesktopHeader />}
       <Routes>
-        <Route path="/" element={<Navigate to={"/home"} />} />
-        <Route path="/home" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/price" element={<PricePage />} />
         <Route path="/contacts" element={<ContactsPage />} />
